@@ -1,0 +1,108 @@
+Claire proprietary beta binary notice
+
+Copyright (c) 2026 The Claire developer. All rights reserved.
+
+Claire binaries are proprietary and provided for testing and evaluation
+under the Claire Beta Tester Terms, agreement version 0.1, reproduced
+below. Public availability of official downloads grants no open-source
+licence to Claire. Third-party software retains its own licences and
+rights; see THIRD_PARTY.md and the notices accompanying the binaries.
+
+Claire Beta Tester Terms
+
+
+Agreement version 0.1 · Effective 11 November 2026
+
+
+
+These terms apply to your use of the Claire beta ("Claire"), provided by the Claire developer ("we", "us"). By clicking Accept and continue you agree to them. If you do not agree, do not install or use Claire.
+
+
+
+1. Beta software
+
+
+Claire is pre-release software, provided for testing and evaluation. It may contain bugs, change without notice, or stop working. Claire is provided "as is" and "as available", without warranties of any kind, express or implied, including fitness for a particular purpose, accuracy, or non-infringement.
+
+
+
+2. Engineering results
+
+
+Claire's geometry, meshes, simulations (FEA and CFD), reports and AI suggestions may be incomplete or wrong. Results labelled unvalidated, untrusted or static equivalent carry additional uncertainty. You must independently verify any result before relying on it for a real design, manufacturing, certification or safety decision. You are solely responsible for how you use Claire's output.
+
+
+
+3. Limitation of liability
+
+
+To the maximum extent permitted by law, we are not liable for any direct, indirect, incidental, consequential or special loss or damage arising from your use of, or inability to use, Claire or its results, including loss of data, profits, or damage to property or persons resulting from reliance on Claire's output.
+
+
+
+4. Training data
+
+
+Claire Free is provided at no cost. In return, Claire records how it is used to improve its AI model. This includes your requests, project concepts, tool calls and their parameters, geometry and design metadata, analysis setups and outcomes, and corrections you make to Claire's work.
+
+
+Before anything is stored, Claire removes personal information such as names, usernames, computer names, file system paths, email addresses, API keys and tokens. Data collection is part of the Free plan and cannot be switched off within it. Claire Enterprise does not collect training data. You can see your plan under Settings → Privacy.
+
+
+
+5. Your designs
+
+
+You keep ownership of the designs and projects you create in Claire. You grant us a worldwide, royalty-free, non-exclusive licence to use the scrubbed data described in section 4 to train, evaluate and improve Claire and its models.
+
+
+You confirm that you have the right to use and share any design, file or data you load into Claire, and that doing so does not breach any agreement, confidentiality obligation or law. Do not load designs you are not permitted to share, for example an employer's or client's confidential parts, unless you use Claire Enterprise.
+
+
+
+6. Model providers and API keys
+
+
+Claire's AI features use a model provider that you configure with your own API key. Your requests are sent to that provider and are subject to its terms and privacy policy. You are responsible for your key, its security and any costs it incurs.
+
+
+
+7. Acceptable use
+
+
+Do not use Claire to break the law, to infringe others' rights, or to design items whose development or export is prohibited or controlled without the required authorisation. Do not attempt to disable or work around Claire's data handling, licensing or edition controls.
+
+
+
+8. Third-party software
+
+
+Claire includes open-source components, including Kratos Multiphysics, OpenFOAM, gmsh, Open CASCADE, build123d and Qt, each under its own licence. Those licences, and the source code offers they require, are listed under About → Licences and in the installed licenses folder. Nothing in these terms limits your rights under those licences.
+
+
+
+9. Beta confidentiality and feedback
+
+
+Please do not redistribute the beta installer or its components without our permission. Feedback and bug reports are welcome. You agree we may use any feedback you send to improve Claire, without obligation to you.
+
+
+
+10. Suspension and termination
+
+
+We may end the beta or your access at any time. You may stop using Claire at any time by uninstalling it. Sections 2, 3, 5 and 11 survive termination.
+
+
+
+11. Changes and governing law
+
+
+We may update these terms. When we do, Claire will show the new version and ask you to accept it before continuing. These terms are governed by the laws of India, and the courts of India have exclusive jurisdiction over any dispute.
+
+
+
+12. Contact
+
+
+Questions about these terms or Claire Enterprise: see the contact details on the Claire release page.
