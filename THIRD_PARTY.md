@@ -4,27 +4,43 @@ Claire's proprietary notice applies to Claire itself. Included third-party
 software retains its own licences. Complete original notices, attribution,
 GPL worker sources and corresponding-source locations are shipped in the
 components and the release's
-[THIRD_PARTY_LICENSES.tar.zst](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.0-beta/THIRD_PARTY_LICENSES.tar.zst).
+[THIRD_PARTY_LICENSES.tar.zst](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/THIRD_PARTY_LICENSES.tar.zst).
 Verify that archive with the release's `SHA256SUMS`. The installed index is
 `app/licenses/THIRD_PARTY.md`, with GPL details in `THIRD_PARTY_GPL.md`.
 The exact runtime versions and build hashes are in the release's `versions.lock`.
+
+**Corresponding source.** The exact source of every GPL and LGPL component
+this release ships is published with it as `src_*` assets, listed with their
+SHA-256 in [SOURCES.md](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) and in `SHA256SUMS`.
 
 **This product includes Kratos Multi-Physics technology.**
 
 **This product includes Kratos Structural Mechanics technology.**
 
+**This product includes Kratos CoSimulation technology.**
+
+**This product includes Kratos Optimization technology.**
+
+**This product includes Kratos Shape Optimization technology.**
+
 | Component | Shipped version | Licence / source |
 |---|---|---|
-| Kratos Multiphysics and used applications | 10.4.2, wheel build 1 | BSD terms with required acknowledgements; [Kratos](https://github.com/KratosMultiphysics/Kratos/tree/v10.4.2) |
+| Kratos Multiphysics and applications (Structural, Contact, ConstitutiveLaws, LinearSolvers, ConvectionDiffusion, Meshing, MeshMoving, Mapping, Statistics, DEM, CoSimulation, Rom, Optimization, ShapeOptimization) | 10.4.2, wheel build 1 | BSD terms with required acknowledgements; [Kratos](https://github.com/KratosMultiphysics/Kratos/tree/v10.4.2); bundled third-party code (AMGCL, Eigen and Spectra (MPL-2.0), pybind11, nanoflann, CoSimIO, Triangle and others) listed in `THIRD_PARTY.md` |
+| MMG (inside Kratos MeshingApplication) | 5.5.1 | LGPL-3.0-or-later, unmodified shared libraries, dynamically linked; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
 | build123d | 0.10.0 | Apache-2.0; [source](https://github.com/gumyr/build123d) |
 | OCP / Open CASCADE | 7.8.1.1.post1 / 7.8.1 | LGPL-2.1 with OCCT exception; [OCP](https://github.com/CadQuery/OCP), [OCCT](https://dev.opencascade.org/) |
-| PySide6 / Qt / shiboken6 | 6.11.0 | Supplied LGPL/GPL notices and exceptions; [Qt for Python](https://code.qt.io/cgit/pyside/pyside-setup.git/) |
+| PySide6 / Qt / shiboken6 | 6.11.0 | Supplied LGPL/GPL notices and exceptions; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) (Qt and Qt for Python 6.11.0) |
+| FFmpeg (inside Qt Multimedia) | n7.1.3 | LGPL-2.1-or-later build; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
+| JBIG-KIT, LibRaw, FreeImage (inside the OCP wheel) | 2.1 / 0.19.5 / 3.18.0 | GPL-2.0-or-later / LGPL-2.1 or CDDL-1.0 / GPL or FreeImage Public License; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
 | NumPy / SciPy | 2.4.4 / 1.17.1 | BSD and bundled-library notices; [NumPy](https://github.com/numpy/numpy), [SciPy](https://github.com/scipy/scipy) |
 | Python | 3.12.3 | PSF and included notices; [source](https://www.python.org/downloads/source/) |
-| Gmsh | 4.15.2 | GPL-2.0-or-later with linking exception; [exact source](https://gmsh.info/src/gmsh-4.15.2-source.tgz) |
-| foamlib | 1.8.1 | GPL-3.0-only; [exact source](https://github.com/gerlero/foamlib/tree/v1.8.1) |
-| OpenFOAM | 2406, patch 260127 | GPL-3.0-or-later; [upstream source](https://dl.openfoam.com/source/v2406/OpenFOAM-v2406.tgz); shipped helper modifications are included as source |
+| GNU Readline, libnsl, libxcrypt, GNU binutils ld, xz GPL scripts (core runtime, conda-forge) | 8.3 / 2.0.1 / 4.4.38 / 2.46.1 / 5.8.3 | GPL-3.0 / LGPL-2.1 / LGPL-2.1+ / GPL-3.0 / GPL-2.0+; [exact source and recipes](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
+| FFTW, GNU Readline, GMP, MPFR, MUNGE, libnl, libnuma, libudev, Scotch (CFD, Ubuntu 24.04 packages) | see SOURCES.md | GPL / LGPL / CeCILL-C; [exact Ubuntu source packages](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
+| Gmsh | 4.15.2 | GPL-2.0-or-later with linking exception; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
+| foamlib | 1.8.1 | GPL-3.0-only; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) |
+| OpenFOAM | 2406, patch 260127 | GPL-3.0-or-later; [exact source](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md) (maintenance-v2406 commit 1653fa08); shipped helper modifications are included as source |
 | Open MPI | 4.1.6 | BSD and bundled-component notices; [source](https://www.open-mpi.org/software/ompi/v4.1/) |
+| OpenPMIx (Open MPI's launch layer; libpmix, plugins, help) | 5.0.1 (Ubuntu 5.0.1-4.1build1) | BSD-style (Open MPI licence family); notice in CFD `licenses/system/libpmix2t64-copyright.txt`; [source](https://github.com/openpmix/openpmix/tree/v5.0.1) |
 | GNU Bash | 5.2.21, Ubuntu 5.2.21-2ubuntu4 | GPL-3.0-or-later; complete corresponding upstream and Ubuntu source archives included in CFD's `licenses/bash-source` |
 | Makeself | 2.5.0 | GPL-2.0-or-later; [exact source](https://github.com/megastep/makeself/tree/release-2.5.0), original shell source included in installer |
 
