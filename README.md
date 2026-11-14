@@ -12,13 +12,13 @@ Claire Free records scrubbed training data locally; Enterprise excludes the
 collector. Bring your own model-provider API key; you enter it in Claire
 (Settings → AI), not in the installer.
 
-## Install v0.1.2-beta
+## Install v0.1.3-beta
 
-Download the installer from the [prerelease](https://github.com/AeroMatrix-M/claire/releases/tag/v0.1.2-beta):
+Download the installer from the [prerelease](https://github.com/AeroMatrix-M/claire/releases/tag/v0.1.3-beta):
 
 ```sh
-curl -fLO https://github.com/AeroMatrix-M/claire/releases/download/v0.1.2-beta/claire-installer-regular.run
-curl -fLO https://github.com/AeroMatrix-M/claire/releases/download/v0.1.2-beta/SHA256SUMS
+curl -fLO https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/claire-installer-regular.run
+curl -fLO https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SHA256SUMS
 awk '$2=="claire-installer-regular.run"' SHA256SUMS | sha256sum -c -
 sh claire-installer-regular.run
 ```
@@ -26,7 +26,7 @@ sh claire-installer-regular.run
 Or use the verified-installer entrypoint:
 
 ```sh
-curl -fsSL https://github.com/AeroMatrix-M/claire/releases/download/v0.1.2-beta/install.sh | sh
+curl -fsSL https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/install.sh | sh
 ```
 
 No GitHub login, systemd or sudo is needed by Claire. The installer uses a
@@ -35,7 +35,7 @@ component selection, with sizes and live progress; without a display it asks eve
 so `curl … | sh` works over SSH too. Nothing is staged in `/tmp`; downloads
 resume from the install directory after an interruption. Choose
 CFD only on a compatible system. Enterprise uses `claire-installer-enterprise.run`
-or `curl -fsSL https://github.com/AeroMatrix-M/claire/releases/download/v0.1.2-beta/install.sh | CLAIRE_EDITION=enterprise sh`.
+or `curl -fsSL https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/install.sh | CLAIRE_EDITION=enterprise sh`.
 
 Default install: `~/.local/share/claire`; launcher: `~/.local/bin/claire`;
 workspace: `~/Claire_Workspace`. AI providers are set up inside Claire (Settings → AI); keys are local, mode 600.
@@ -48,7 +48,7 @@ For offline installation, download the installer, `manifest.json`, `SHA256SUMS`
 and the desired component archives into one directory, verify the checksums,
 then run `sh claire-installer-regular.run -- --from "$PWD"`.
 Full instructions and tested dependency commands are in the release's
-[INSTALL.md](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.2-beta/INSTALL.md).
+[INSTALL.md](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/INSTALL.md).
 
 ## Requirements and limits
 
@@ -65,10 +65,11 @@ Full instructions and tested dependency commands are in the release's
 - Linux only; external CFD remains unvalidated, with no boundary layers.
   Offscreen tests do not prove rendering on your display.
 
-v0.1.2-beta is tested on Arch and Fedora 44 (public online install, an
+v0.1.3-beta is tested on Arch and Fedora 44 (public online install, an
 installed AI turn, packaged numerical gate). Ubuntu 22.04/Debian 12 passed
-CAD/mesh/FEA and verified CFD refusal with v0.1.0-beta's runtime, which this
-release reuses unchanged. Earlier releases stay available on the
+CAD/mesh/FEA and verified CFD refusal with v0.1.0-beta's Python runtime, which
+this release reuses unchanged; the new FEA and CFD components were tested on
+Arch and Fedora 44 only. Earlier releases stay available on the
 [releases page](https://github.com/AeroMatrix-M/claire/releases).
 
 ## Acknowledgements and support
@@ -77,6 +78,14 @@ release reuses unchanged. Earlier releases stay available on the
 
 **This product includes Kratos Structural Mechanics technology.**
 
+**This product includes Kratos CoSimulation technology.**
+
+**This product includes Kratos Optimization technology.**
+
+**This product includes Kratos Shape Optimization technology.**
+
 See [THIRD_PARTY.md](THIRD_PARTY.md) for dependency licences, source locations
-and the downloadable full notices. Third-party rights remain unchanged.
+and the downloadable full notices. The exact source of every GPL and LGPL
+component shipped is published with the release
+([SOURCES.md](https://github.com/AeroMatrix-M/claire/releases/download/v0.1.3-beta/SOURCES.md)). Third-party rights remain unchanged.
 For beta support, Terms or Enterprise enquiries, [open an issue](https://github.com/AeroMatrix-M/claire/issues).
