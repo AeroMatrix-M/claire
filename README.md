@@ -14,6 +14,8 @@ collector. Bring your own model-provider API key; you enter it in Claire
 
 ## Install v0.1.7-beta
 
+One version, two installers — Linux: `install.sh` · Windows: `Claire-Setup.exe` (experimental until tested on hardware).
+
 Download the installer from the [prerelease](https://github.com/AeroMatrix-M/claire/releases/tag/v0.1.7-beta):
 
 ```sh
