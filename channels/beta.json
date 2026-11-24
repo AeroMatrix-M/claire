@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "channel": "beta",
+  "version": "v0.1.7-beta",
+  "release_url": "https://github.com/AeroMatrix-M/claire/releases/tag/v0.1.7-beta",
+  "installers": {
+    "regular": {
+      "url": "https://github.com/AeroMatrix-M/claire/releases/download/v0.1.7-beta/claire-installer-regular.run",
+      "sha256": "c69b1d393f99c10e4f4f44d2ca8b9c74b7e29b9bdb77eefcccc565f23acb0a0d",
+      "size": 707336
+    },
+    "enterprise": {
+      "url": "https://github.com/AeroMatrix-M/claire/releases/download/v0.1.7-beta/claire-installer-enterprise.run",
+      "sha256": "2438fc1dc1d13fbd364d2194d39e5f902b157ed19ca1c08e7a4469e08c9fcdeb",
+      "size": 707347
+    }
+  },
+  "install_sh": {
+    "url": "https://github.com/AeroMatrix-M/claire/releases/download/v0.1.7-beta/install.sh",
+    "sha256": "54c0581a1e1e45fecb0b335eca8e119ed133a83595224eb753e44cc6208dfcf9",
+    "size": 1735
+  },
+  "windows_setup": {
+    "url": "https://github.com/AeroMatrix-M/claire/releases/download/v0.1.7-beta/Claire-Setup.exe",
+    "sha256": "0ff53c03f0fb237f663e444d4310c2eff39a24ea9d2c62184b1aea38bfd0a599",
+    "size": 185460
+  }
+}
